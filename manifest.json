@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Groupie",
+  "description": "Rename tab groups with a keyboard shortcut",
+  "version": "1.0",
+  "action": {
+    "default_title": "Groupie",
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html",
+  "permissions": ["tabs", "tabGroups", "commands"],
+  "commands": {
+    "rename": {
+      "suggested_key": {
+        "default": "Alt+Shift+J",
+        "mac": "MacCtrl+Shift+J"
+      },
+      "description": "Rename current tab group"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
